@@ -152,7 +152,7 @@ def main():
     st.title("Bus Booking System")
 
     if not st.session_state.logged_in:
-        st.sidebar.image("img2.jpeg", use_column_width=True)
+        st.sidebar.image("img2.jpg", use_column_width=True)
         selected_page = st.sidebar.radio("", ["Admin Login", "User Login", "User Register"])
         # Login/Register Section
         if selected_page=="User Login":
@@ -217,7 +217,7 @@ def main():
         st.subheader(f"Welcome back, {st.session_state.username}!")
         
         if st.session_state.mode=="Admin":
-            st.sidebar.image("img2.jpeg", use_column_width=True)
+            st.sidebar.image("img2.jpg", use_column_width=True)
             selected_page = st.sidebar.radio("", ["Add Bus", "Update Bus", "Delete Bus"])
            
             if selected_page=="Add Bus":
